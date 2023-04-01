@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Text Summarizer",
+    "description": "Scan and summarize text from any webpage including but not limited to: news articles, blog posts, research papers, and legal documents",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/bino.png"
+    },
+    "icons": {
+        "16": "images/bino16.png",
+        "48": "images/bino48.png",
+        "128": "images/bino128.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.openai.com/"
+      },      
+    "background": {
+        "service_worker": "scripts/background.js"
+      }
+      
+}
