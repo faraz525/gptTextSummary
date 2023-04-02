@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 
       if(!userText.trim()) return;
   
-      const apiKey = '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';
+      const apiKey = 'INSERT KEY HERE';
       const prompt = userText;
       loadingSpinner.style.display = 'block';
       responseText.style.display = 'none';
